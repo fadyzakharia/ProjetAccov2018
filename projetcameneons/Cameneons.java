@@ -9,12 +9,6 @@ package projetcameneons;
  *
  * @author FADY
  */
-public class Couleur {
-    private static int nbrCouleurs = 3;
-    
-    private Couleur(int valeur)
-    {
-        
-    }
-    
+public class Cameneons extends Thread{
+    private Foret foret;
 }
