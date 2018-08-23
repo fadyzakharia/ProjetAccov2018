@@ -4,18 +4,37 @@
  * and open the template in the editor.
  */
 package projetcameneons;
-
 /**
  *
  * @author FADY
  */
-public class projetCameneons {
+public class projetCameneons 
+{
+    
+    static Couleur[] Couleurs =
+		{Couleur.JAUNE,
+			Couleur.BLEU,
+			Couleur.ROUGE,
+			Couleur.BLEU,
+			Couleur.JAUNE,
+			Couleur.BLEU
+		} ;
+     // create an array of type chameleon
 
+    static Cameneons[] Cameneons = new Cameneons[Couleurs.length];
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Foret foret = new Foret();
+        for (int i = 0 ;i<Couleurs.length;i++)
+        {
+             //Cameneons[i]=new Cameneons(new Idenforet,new ChameleonId(i),colors[i]);
+            Cameneons[i] = new Cameneons(new IdentificateurCameneon(i),foret,Couleurs[i]);
+            new Thread(Cameneons[i]).start();
+
+        }
     }
     
 }

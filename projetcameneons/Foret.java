@@ -27,7 +27,7 @@ public class Foret
             } 
             catch(InterruptedException e)
             {
-                 e.printStackTrace();
+                 //e.printStackTrace();
             }
         }
         if(appel1)
@@ -42,7 +42,7 @@ public class Foret
                 }
                 catch(InterruptedException e)
                 {
-                     e.printStackTrace();
+                     //e.printStackTrace();
                 }
             }
             attendre = false;
