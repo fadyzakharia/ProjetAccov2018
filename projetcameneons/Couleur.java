@@ -57,7 +57,7 @@ public class Couleur
      */
     public Couleur(int valCouleur)
     {
-        this.couleurInterne = valCouleur/nbr;
+        Couleur.couleurInterne = valCouleur/nbr;
     }
     
     // Methode pour change la couleur du Cameneon

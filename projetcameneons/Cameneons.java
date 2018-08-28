@@ -38,28 +38,28 @@ public class Cameneons implements Runnable //extends Thread
     // 1 - Cycle de vie : Manger
     private void manger()
     {
-        comportementActuel("Je manges");
+        this.comportementActuel("Je manges");
     }
     
     // 2 - Cycle de vie : entraîner
     private void entrainer()
     {
-        comportementActuel("J'entraînes");
+        this.comportementActuel("J'entraînes");
     }
     
     // 3 - Cycle de vie : aller au 'mail' 
     private void allerAuMail()
     {
-        comportementActuel("Je veux aller au Mail");
+        this.comportementActuel("Je veux aller au Mail");
     }
     
     // 4 - Cycle de vie : subir une nouvelle mutation
     private void nouvelleMutation() throws InterruptedException
     {
-        comportementActuel("Mutation en cours");
+        this.comportementActuel("Mutation en cours");
         autreCouleur = foret.cooperer(id, maCouleur);
         maCouleur = Couleur.changerCouleur(autreCouleur);
-        comportementActuel("Mutation terminé");
+        this.comportementActuel("Mutation terminé");
     }
     
     //public Thread thread;

@@ -12,13 +12,18 @@ public class projetCameneons
 {
     
     static Couleur[] Couleurs =
-		{Couleur.JAUNE,
-			Couleur.BLEU,
-			Couleur.ROUGE,
-			Couleur.BLEU,
-			Couleur.JAUNE,
-			Couleur.BLEU
-		} ;
+    {
+        Couleur.BLEU,
+        Couleur.JAUNE,
+        Couleur.ROUGE,
+        Couleur.BLEU,
+        Couleur.ROUGE,
+        Couleur.BLEU,
+        Couleur.JAUNE,
+        Couleur.BLEU,
+        Couleur.ROUGE,
+        Couleur.JAUNE,
+    } ;
      // create an array of type chameleon
 
     static Cameneons[] Cameneons = new Cameneons[Couleurs.length];
@@ -30,7 +35,6 @@ public class projetCameneons
         Foret foret = new Foret();
         for (int i = 0 ;i<Couleurs.length;i++)
         {
-             //Cameneons[i]=new Cameneons(new Idenforet,new ChameleonId(i),colors[i]);
             Cameneons[i] = new Cameneons(new IdentificateurCameneon(i),foret,Couleurs[i]);
             new Thread(Cameneons[i]).start();
 
